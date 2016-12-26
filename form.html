@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Form</title>
+    <link rel='stylesheet' type='text/css' href='/home/codingmart/Desktop/two/style.css' />
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registration</h2>
+
+        <form>
+            <fieldset>
+                <legend>Please Enter Your Details</legend>
+                <label for="email">Email</label>
+                <input type="email" id="doj" name="email" size="30" placeholder="Enter your valid Email ID" required/>
+                <input type="button" value="check" onclick="mail()" />
+                <p id="result">
+
+                </p>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" size="30" placeholder="Enter your Full name" required/>
+                <input type="button" value="check" onclick="nam()" />
+                <p id="nameres">
+
+                </p>
+
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" size="30" value=18 required/>
+                <input type="button" value="check" onclick="agecheck()" id="chk" />
+                <p id="ageval">
+                </p>
+
+                <div id="status">
+                    <input type="checkbox" name="married" id="married" />Married
+                    <input type="checkbox" name="unmarried" id="unmarried" />Unmarried
+                </div>
+
+                <div id="spousename">
+                    <label for="name">Spouse name</label>
+                    <input type="text" id="spouse" name="spouse" size="30" />
+                </div>
+
+                <input type="button" value="SIGN UP" onclick="msg()" id="btn" />
+                <h1 id="msg">Thank you for your details</h1>
+            </fieldset>
+        </form>
+    </div>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script type='text/javascript' src='/home/codingmart/Desktop/two/file.js'></script>
+</body>
+
+</html>
